@@ -75,4 +75,7 @@ dependencies {
     // Compose Runtime
     implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
 
+    // Jetpack Compose - Coil
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
 }
