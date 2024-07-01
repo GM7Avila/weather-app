@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        weatherViewModel = ViewModelProvider(this)[WeatherViewModel::class.java]
+        weatherViewModel = ViewModelProvider(this).get(WeatherViewModel::class.java)
 
         setContent {
             AppTempoTheme {
