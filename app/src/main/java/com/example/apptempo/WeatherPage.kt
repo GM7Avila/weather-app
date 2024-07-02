@@ -75,12 +75,12 @@ fun WeatherPage(viewModel: WeatherViewModel) {
                 Text(text = result.message)
             }
 
-            NetworkResponse.Loading -> {
+            is NetworkResponse.Loading -> {
                 CircularProgressIndicator()
             }
 
             is NetworkResponse.Success -> {
-                WeatherViewModel(data = result.data)
+                WeatherDetailsView(data = result.data)
             }
 
             null -> {}
@@ -89,7 +89,7 @@ fun WeatherPage(viewModel: WeatherViewModel) {
 }
 
 @Composable
-fun WeatherViewModel(data: WeatherModel) {
+fun WeatherDetailsView(data: WeatherModel) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
