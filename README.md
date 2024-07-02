@@ -19,22 +19,19 @@ The project is structured as follows:
 ```
 app/
 ├── api/
-│   ├── RetrofitInstance.kt
-│   ├── WeatherApi.kt
-├── ui/
-│   ├── MainActivity.kt
-│   ├── WeatherViewModel.kt
-│   ├── WeatherAdapter.kt
-│   └── ...
-├── models/
-│   ├── WeatherResponse.kt
-│   └── ...
-├── utils/
-│   └── ...
+│   ├── Condition
+│   ├── Constant
+│   ├── Current
+│   ├── Location
+│   ├── NetworkResponse
+│   ├── WeatherApi
+│   └── WeatherModel
+│
+├── ui.theme
+├── MainActivity
+├── WeatherPage.kt
+├── WeatherViewModel
 └── res/
-    ├── layout/
-    ├── values/
-    └── ...
 ```
 
 ## How to Run
@@ -49,8 +46,9 @@ app/
 val apiKey = "Your_API_Key_Here"
 
 ```
-
 4. Build with gradle and run the app on an Android emulator or device.
+
+![image](https://github.com/GM7Avila/weather-app/assets/94200845/9cbb77f2-244d-4b27-8dc3-5711c2264d39)
 
 ## Contributions
 Contributions are welcome! If you would like to contribute, please fork the repository, create a branch for your changes, and submit a pull request.
