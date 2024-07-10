@@ -1,5 +1,6 @@
 package com.example.apptempo.api
 
 object Constant {
-    val apiKey = "33d89672bac54e2b825191537240107"
+    // www.weatherapi.com (https + json)
+    val apiKey = "Your_API_Key_Here"
 }
